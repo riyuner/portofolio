@@ -51,15 +51,15 @@ export default function Portfolio() {
 
   const projects = [
     {
-      title: "Radio Simulator",
-      description: "Advanced radio simulation system calculating signal range based on specifications, terrain topology, and receiver characteristics for defense applications.",
-      tech: ["Java", "GIS", "Simulation"],
-      year: "2024"
-    },
-    {
       title: "Public Transport Management System",
       description: "Comprehensive MDVR-based platform for fleet tracking, income reporting, alarm management, and real-time transportation monitoring.",
       tech: ["PostgreSQL", "PostGIS", "MDVR"],
+      year: "2024"
+    },
+    {
+      title: "LED Passenger Information System",
+      description: "IoT solution utilizing ESP8266 microcontrollers for LED matrix displays with UDP broadcast and Android control interface.",
+      tech: ["ESP8266", "Android", "UDP", "IoT"],
       year: "2024"
     },
     {
@@ -72,25 +72,31 @@ export default function Portfolio() {
       title: "Asset Management System",
       description: "Enterprise solution for asset distribution, stock management, location tracking, and inter-location transfer operations.",
       tech: ["Java", "PostgreSQL", "Docker"],
-      year: "2023"
+      year: "2023-2024"
     },
     {
       title: "Social Media Sentiment Analyzer",
       description: "Intelligent web scraping system with NLP capabilities for analyzing social media sentiment based on keyword patterns.",
       tech: ["Python", "NLP", "Web Scraping"],
-      year: "2023"
+      year: "2023-2024"
     },
     {
       title: "Face Recognition System",
       description: "Vector-based facial recognition platform using advanced similarity search algorithms for matching against stored databases.",
       tech: ["Python", "Vector Search", "AI/ML"],
+      year: "2023-2024"
+    },
+    {
+      title: "Radio Simulator",
+      description: "Advanced radio simulation system calculating signal range based on specifications, terrain topology, and receiver characteristics for defense applications.",
+      tech: ["Java", "GIS", "Simulation"],
       year: "2023"
     },
     {
-      title: "LED Passenger Information System",
-      description: "IoT solution utilizing ESP8266 microcontrollers for LED matrix displays with UDP broadcast and Android control interface.",
-      tech: ["ESP8266", "Android", "UDP", "IoT"],
-      year: "2023"
+      title: "Link ID Data Link System",
+      description: "Military tactical data link system based on Link 16 protocol for secure communication and information exchange between defense platforms.",
+      tech: ["Java", "Link 16", "Military Protocol"],
+      year: "2021-2023"
     }
   ];
 
@@ -100,13 +106,13 @@ export default function Portfolio() {
       role: "Senior Software Engineer",
       period: "January 2024 - Present",
       location: "Cimahi, West Java",
-      description: "Leading development of 7+ major production systems spanning defense applications, IoT solutions, and enterprise platforms. Managing GitLab infrastructure and mentoring development teams.",
+      description: "Leading development of enterprise systems and managing entire technology infrastructure including GitLab, Docker Hub, mail servers, Jenkins, and mentoring development teams.",
       highlights: [
-        "Architected and deployed radio simulation system for defense sector",
-        "Led development of comprehensive public transport management platform",
-        "Managed GitLab infrastructure at gitlab.agoratechnosolution.id",
-        "Implemented AI/ML solutions including face recognition systems",
-        "Designed IoT systems using ESP8266 and custom communication protocols"
+        "Developed backend for public transport management platform with fleet tracking and real-time monitoring",
+        "Built LED passenger information system using ESP8266 and custom communication protocols",
+        "Implemented MDVR TCP server for processing raw data from Meitrack devices",
+        "Managed company technology stack and infrastructure as DevOps/SysAdmin",
+        "Led CI/CD pipeline implementation and deployment automation"
       ]
     },
     {
@@ -116,9 +122,9 @@ export default function Portfolio() {
       location: "Bandung, West Java",
       description: "Full-stack development focusing on enterprise applications, IoT implementations, and AI/ML integration.",
       highlights: [
-        "Developed asset management system with distribution tracking",
-        "Built social media sentiment analysis tools",
-        "Implemented custom TCP server for MDVR data processing",
+        "Developed asset management system with distribution tracking and inter-location transfers",
+        "Built social media sentiment analyzer with NLP capabilities and web scraping",
+        "Implemented face recognition system using vector-based similarity search algorithms",
         "Collaborated with international partners on hardware integration"
       ]
     },
@@ -127,10 +133,11 @@ export default function Portfolio() {
       role: "Software Engineer",
       period: "March 2023 - July 2023",
       location: "Bandung, West Java",
-      description: "Software engineering solutions for various client projects.",
+      description: "Software engineering solutions for defense sector applications.",
       highlights: [
-        "Delivered software solutions for client requirements",
-        "Participated in full development lifecycle"
+        "Developed radio simulator system for defense applications with GIS integration",
+        "Calculated signal range based on specifications, terrain topology, and receiver characteristics",
+        "Participated in full development lifecycle for defense sector projects"
       ]
     },
     {
@@ -163,9 +170,10 @@ export default function Portfolio() {
 
   const skills = {
     "Programming Languages": ["Java", "Python", "Dart", "JavaScript"],
-    "Frameworks & Libraries": ["Jakarta EE", "Django", "Flutter", "VueJs", "JavaFX"],
+    "Frameworks & Libraries": ["Jakarta EE", "Quarkus", "GraalVM", "Django", "JavaFX"],
     "Databases": ["PostgreSQL", "PostGIS", "GIS Data Processing"],
-    "DevOps & Infrastructure": ["Docker", "Kubernetes", "Jenkins", "CI/CD", "GitLab"],
+    "DevOps & Infrastructure": ["Docker", "Docker Hub", "Kubernetes", "Jenkins", "CI/CD", "GitLab", "Mail Server Administration"],
+    "System Administration": ["Linux Server Management", "Technology Stack Management", "Infrastructure Planning"],
     "Hardware & IoT": ["ESP8266", "MDVR Systems", "LED Matrix", "Embedded Systems"],
     "AI & Tools": ["Vector Search", "NLP", "IntelliJ IDEA", "JetBrains Suite", "Claude AI", "GLM4.5"],
     "Methodologies": ["Scrum", "Agile", "System Integration", "Test-Driven Development"]
@@ -308,8 +316,8 @@ export default function Portfolio() {
                   at PT Len Industri to architecting IoT solutions and AI-powered platforms at Agora Techno Solution.
                 </p>
                 <p>
-                  What drives me is the curiosity to understand how things work at every level. Whether I am tinkering with PC hardware, 
-                  modifying vehicle electronics, or architecting distributed systems, I approach each challenge with the same enthusiasm 
+                  What drives me is the curiosity to understand how things work at every level. Whether I am tinkering with PC hardware
+                  or architecting distributed systems, I approach each challenge with the same enthusiasm
                   for understanding the underlying mechanisms.
                 </p>
                 <div className="grid md:grid-cols-2 gap-8 pt-8">
@@ -319,10 +327,6 @@ export default function Portfolio() {
                       <li className="flex items-start gap-2">
                         <ChevronRight size={20} className="mt-0.5 flex-shrink-0" />
                         <span>Hardware Electronics and PC Building</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <ChevronRight size={20} className="mt-0.5 flex-shrink-0" />
-                        <span>Vehicle Modifications</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <ChevronRight size={20} className="mt-0.5 flex-shrink-0" />
@@ -447,8 +451,8 @@ export default function Portfolio() {
               <div className="mt-12 pt-8 border-t border-gray-200">
                 <h3 className="text-sm font-bold tracking-widest mb-4">INFRASTRUCTURE MANAGEMENT</h3>
                 <div className="space-y-3 text-gray-700">
-                  <p><span className="font-medium">GitLab Administration:</span> Managing company infrastructure at gitlab.agoratechnosolution.id</p>
-                  <p><span className="font-medium">On-Premise Deployment:</span> Docker and Kubernetes on physical servers for production systems</p>
+                  <p><span className="font-medium">Full Stack Management:</span> Managing entire technology infrastructure including GitLab, Docker Hub, mail servers, Jenkins, and CI/CD pipelines</p>
+                  <p><span className="font-medium">DevOps & SysAdmin:</span> Linux server administration, on-premise deployment with Docker and Kubernetes for production systems</p>
                 </div>
               </div>
             </div>
