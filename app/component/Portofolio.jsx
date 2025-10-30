@@ -4,8 +4,8 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Mail, Linkedin, Code, Briefcase, GraduationCap, ChevronRight, MapPin, Home, User, Folder, Phone } from 'lucide-react';
-import riyuner from '../blog/images/riyuner.jpeg';
-import riyuner_2 from '../blog/images/riyuner2.png';
+import riyuner from '../../public/blog/images/riyuner.jpeg';
+import riyuner_2 from '../../public/blog/images/riyuner2.png';
 
 export default function Portfolio() {
   const [activeSection, setActiveSection] = useState('home');
@@ -51,51 +51,51 @@ export default function Portfolio() {
 
   const projects = [
     {
-      title: "Public Transport Management System",
-      description: "Comprehensive MDVR-based platform for fleet tracking, income reporting, alarm management, and real-time transportation monitoring.",
-      tech: ["PostgreSQL", "PostGIS", "MDVR"],
+      title: "Fleet Management Platform",
+      description: "Developed a comprehensive real-time monitoring system for vehicle fleet operations, integrating telematics data with spatial databases for advanced tracking and reporting capabilities.",
+      tech: ["PostgreSQL", "PostGIS", "Real-time Data Processing"],
       year: "2024"
     },
     {
-      title: "LED Passenger Information System",
-      description: "IoT solution utilizing ESP8266 microcontrollers for LED matrix displays with UDP broadcast and Android control interface.",
-      tech: ["ESP8266", "Android", "UDP", "IoT"],
+      title: "IoT Display Network System",
+      description: "Architected an IoT-based digital display solution using embedded microcontrollers for distributed information dissemination with mobile device control capabilities.",
+      tech: ["Embedded Systems", "Mobile Development", "UDP Protocol", "IoT"],
       year: "2024"
     },
     {
-      title: "MDVR TCP Server",
-      description: "Custom TCP server architecture for receiving and processing raw MDVR data from Meitrack devices with business integration layer.",
-      tech: ["Java", "TCP/IP", "Meitrack API"],
+      title: "Telemetry Data Processing Server",
+      description: "Built a custom TCP server architecture for real-time data ingestion from vehicle telemetry devices, implementing parsing protocols and business logic integration.",
+      tech: ["Java", "TCP/IP", "Data Processing"],
       year: "2024"
     },
     {
-      title: "Asset Management System",
-      description: "Enterprise solution for asset distribution, stock management, location tracking, and inter-location transfer operations.",
+      title: "Enterprise Asset Tracking System",
+      description: "Designed and implemented a comprehensive inventory management solution with multi-location tracking, distribution workflows, and real-time stock monitoring.",
       tech: ["Java", "PostgreSQL", "Docker"],
       year: "2023-2024"
     },
     {
-      title: "Social Media Sentiment Analyzer",
-      description: "Intelligent web scraping system with NLP capabilities for analyzing social media sentiment based on keyword patterns.",
+      title: "Social Media Analytics Platform",
+      description: "Developed an intelligent web scraping and NLP system for analyzing online sentiment patterns and extracting insights from social media data sources.",
       tech: ["Python", "NLP", "Web Scraping"],
       year: "2023-2024"
     },
     {
-      title: "Face Recognition System",
-      description: "Vector-based facial recognition platform using advanced similarity search algorithms for matching against stored databases.",
+      title: "Biometric Recognition System",
+      description: "Implemented a vector-based facial recognition platform using similarity search algorithms for identity verification against secure databases.",
       tech: ["Python", "Vector Search", "AI/ML"],
       year: "2023-2024"
     },
     {
-      title: "Radio Simulator",
-      description: "Advanced radio simulation system calculating signal range based on specifications, terrain topology, and receiver characteristics for defense applications.",
+      title: "Wireless Signal Simulation System",
+      description: "Created an advanced RF propagation modeling system calculating signal coverage based on terrain analysis and equipment specifications for tactical planning.",
       tech: ["Java", "GIS", "Simulation"],
       year: "2023"
     },
     {
-      title: "Link ID Data Link System",
-      description: "Military tactical data link system based on Link 16 protocol for secure communication and information exchange between defense platforms.",
-      tech: ["Java", "Link 16", "Military Protocol"],
+      title: "Tactical Communication System",
+      description: "Developed a secure tactical data link implementation for real-time information exchange between distributed platforms in mission-critical environments.",
+      tech: ["Java", "Secure Communications", "Distributed Systems"],
       year: "2021-2023"
     }
   ];
@@ -108,9 +108,9 @@ export default function Portfolio() {
       location: "Cimahi, West Java",
       description: "Leading development of enterprise systems and managing entire technology infrastructure including GitLab, Docker Hub, mail servers, Jenkins, and mentoring development teams.",
       highlights: [
-        "Developed backend for public transport management platform with fleet tracking and real-time monitoring",
-        "Built LED passenger information system using ESP8266 and custom communication protocols",
-        "Implemented MDVR TCP server for processing raw data from Meitrack devices",
+        "Developed backend for fleet management platform with real-time vehicle tracking and monitoring capabilities",
+        "Built IoT-based digital display system using embedded microcontrollers and custom communication protocols",
+        "Implemented telemetry data processing server for real-time device data ingestion and business integration",
         "Managed company technology stack and infrastructure as DevOps/SysAdmin",
         "Led CI/CD pipeline implementation and deployment automation"
       ]
@@ -133,11 +133,11 @@ export default function Portfolio() {
       role: "Software Engineer",
       period: "March 2023 - July 2023",
       location: "Bandung, West Java",
-      description: "Software engineering solutions for defense sector applications.",
+      description: "Software engineering solutions for tactical systems and secure communications.",
       highlights: [
-        "Developed radio simulator system for defense applications with GIS integration",
-        "Calculated signal range based on specifications, terrain topology, and receiver characteristics",
-        "Participated in full development lifecycle for defense sector projects"
+        "Developed RF propagation simulation system with GIS integration for signal analysis",
+        "Calculated signal coverage based on equipment specifications and terrain topology",
+        "Participated in full development lifecycle for tactical communication projects"
       ]
     },
     {
@@ -145,12 +145,12 @@ export default function Portfolio() {
       role: "Software Engineer",
       period: "October 2021 - March 2023",
       location: "Bandung, West Java",
-      description: "Defense systems development for Indonesia's military infrastructure.",
+      description: "Tactical communication systems development for critical infrastructure.",
       highlights: [
-        "Developed Data Link application based on Link-16 NATO Specification using Java",
-        "Built Command Center system with JavaFX for military operations",
+        "Developed tactical data link application using secure communication protocols in Java",
+        "Built Command Center system with JavaFX for operations management",
         "Created System Awareness Viewer using Django and VueJs",
-        "Integrated multiple military sensors and weapon systems",
+        "Integrated multiple sensor systems and communication platforms",
         "Managed CI/CD pipelines with Jenkins",
         "Conducted acceptance testing and system reviews"
       ]
@@ -174,7 +174,7 @@ export default function Portfolio() {
     "Databases": ["PostgreSQL", "PostGIS", "GIS Data Processing"],
     "DevOps & Infrastructure": ["Docker", "Docker Hub", "Kubernetes", "Jenkins", "CI/CD", "GitLab", "Mail Server Administration"],
     "System Administration": ["Linux Server Management", "Technology Stack Management", "Infrastructure Planning"],
-    "Hardware & IoT": ["ESP8266", "MDVR Systems", "LED Matrix", "Embedded Systems"],
+    "Hardware & IoT": ["Embedded Systems", "LED Matrix", "IoT Protocols", "Microcontrollers"],
     "AI & Tools": ["Vector Search", "NLP", "IntelliJ IDEA", "JetBrains Suite", "Claude AI", "GLM4.5"],
     "Methodologies": ["Scrum", "Agile", "System Integration", "Test-Driven Development"]
   };
@@ -217,7 +217,7 @@ export default function Portfolio() {
                 </h1>
               </div>
               <p className="text-xl text-gray-600 leading-relaxed mb-8">
-                Building robust, scalable systems from defense applications to IoT solutions. 
+                Building robust, scalable systems from tactical communications to IoT solutions. 
                 Specialized in bridging hardware and software with 5+ years of experience in enterprise and mission-critical systems.
               </p>
               <div className="flex flex-wrap gap-4 mb-8">
@@ -286,11 +286,6 @@ export default function Portfolio() {
               
               <div className="mb-8 lg:block hidden">
                 <div className="relative group">
-                  {/* 
-                    CHANGE SECOND PHOTO HERE (Optional):
-                    Replace the src URL with your own photo
-                    Recommended size: 600x800px (portrait)
-                  */}
                   <div className="aspect-[3/4] overflow-hidden bg-gray-200 relative">
                     <Image
                         src={riyuner_2}
@@ -309,10 +304,10 @@ export default function Portfolio() {
               <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
                 <p>
                   I am a Senior Software Engineer with a unique perspective that bridges the gap between hardware and software engineering. 
-                  While most engineers specialize in one domain, I thrive in understanding both—from ESP8266 firmware to enterprise Java systems.
+                  While most engineers specialize in one domain, I thrive in understanding both—from embedded firmware to enterprise Java systems.
                 </p>
                 <p>
-                  My career has taken me through diverse environments, from developing defense systems for Indonesia military infrastructure 
+                  My career has taken me through diverse environments, from developing tactical communication systems for critical infrastructure 
                   at PT Len Industri to architecting IoT solutions and AI-powered platforms at Agora Techno Solution.
                 </p>
                 <p>
@@ -358,7 +353,7 @@ export default function Portfolio() {
             <div className="lg:col-span-4">
               <h2 className="text-4xl font-bold mb-6">Experience</h2>
               <div className="w-16 h-1 bg-black mb-8" />
-              <p className="text-gray-600">5+ years of professional experience across defense, enterprise, and IoT sectors.</p>
+              <p className="text-gray-600">5+ years of professional experience across tactical communications, enterprise, and IoT sectors.</p>
             </div>
             <div className="lg:col-span-8">
               <div className="space-y-12">
