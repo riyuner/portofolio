@@ -1,8 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    // Custom domain (riyuner.id) configured via CNAME file
-    // No basePath needed for root domain deployment
-
     images: {
         domains: ['images.unsplash.com'], // For stock photos
         formats: ['image/avif', 'image/webp'],
