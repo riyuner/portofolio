@@ -1,6 +1,6 @@
 ---
 title: "Welcome to riyuner.id"
-date: "2024-01-15"
+date: "2025-10-15"
 excerpt: "Hello and welcome to my personal blog! This is my little corner of the internet where I'll be sharing thoughts, projects, and my journey through the fascinating world of software and hardware."
 tags: ["Welcome", "Introduction", "About"]
 readTime: "5 min read"
@@ -54,9 +54,9 @@ My technical journey has been diverse:
 const mySkills = {
   backend: ['Java', 'Spring Boot', 'Node.js'],
   frontend: ['React', 'Next.js', 'Vue.js'],
-  iot: ['ESP8266', 'Arduino', 'Raspberry Pi'],
+  iot: ['Sensor', 'Arduino', 'Raspberry Pi'],
   databases: ['PostgreSQL', 'MongoDB', 'Redis'],
-  cloud: ['AWS', 'Google Cloud', 'DigitalOcean'],
+  cloud: ['Google Cloud', 'DigitalOcean'],
   other: ['Docker', 'Kubernetes', 'Linux']
 }
 ```
@@ -118,4 +118,4 @@ Grab a cup of your favorite coffee, have a look around, and let's get curious to
 
 If you have questions, ideas, or just want to chat about tech, feel free to reach out. I'm always happy to connect with fellow enthusiasts.
 
-*P.S. This blog is built with Next.js and deployed on Vercel. If you're curious about the technical details, I'll be writing about the stack in a future post!*
+*P.S. This blog is built with Next.js and deployed on Github Pages. If you're curious about the technical details, I'll be writing about the stack in a future post!*
