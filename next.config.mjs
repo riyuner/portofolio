@@ -1,8 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    // Set base path for GitHub Pages deployment to subdirectory
-    // This ensures all assets and links work correctly at /portofolio/
-    basePath: '/portofolio',
+    // Custom domain (riyuner.id) configured via CNAME file
+    // No basePath needed for root domain deployment
 
     images: {
         domains: ['images.unsplash.com'], // For stock photos
